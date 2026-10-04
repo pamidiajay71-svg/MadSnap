@@ -6,32 +6,32 @@ photo of a medicine/tablet or enter a medicine-related question, and
 MedSnap provides simple information about what the medicine appears to
 be, its common purpose, benefits, side effects, and important
 precautions.
-⚠️ Medical safety: MedSnap is an information assistant, not a
+Medical safety: MedSnap is an information assistant, not a
 doctor. It does not diagnose conditions, prescribe medicines,
 recommend dosages, or tell users to start, stop, or change prescribed
 medication.
 
-✨ Features
-- 📸 Medicine image analysis --- Upload JPG, JPEG, or PNG images
+Features
+- Medicine image analysis --- Upload JPG, JPEG, or PNG images
   of medicines/tablets.
-- 💬 Text-based medicine questions --- Ask about medicines using
+- Text-based medicine questions --- Ask about medicines using
   natural language.
-- 🤖 AI-powered explanations --- Uses Google Gemini to analyze the
+- AI-powered explanations --- Uses Google Gemini to analyze the
   supplied text or image.
-- 💊 Structured medicine information --- Explains:
+- Structured medicine information --- Explains:
   - What the medicine appears to be
   - Common purpose / general use
   - Common benefits or effects
   - Common side effects
   - Important precautions and warnings
   - Whether identification is certain or estimated
-- 📲 WhatsApp summary --- Summarizes medicines discussed during
+- WhatsApp summary --- Summarizes medicines discussed during
   the session and sends the summary to the user's WhatsApp number
   through Twilio.
-- 🛡️ Safety-focused responses --- Unclear medicine images are
+- Safety-focused responses --- Unclear medicine images are
   treated as uncertain, and serious symptoms or reactions are directed
   to qualified healthcare professionals.
-🧠 How It Works
+How It Works
 User
   │
   ├── Medicine Photo ──────┐
@@ -64,7 +64,7 @@ User
 The application imports Google GenAI, Streamlit, and Twilio in the main
 application, while the project dependencies are listed in
 requirements.txt.
-📁 Project Structure
+Project Structure
 MedSnap/
 │
 ├── app.py
@@ -86,14 +86,14 @@ Contains the Python packages required to run the application.
 .streamlit/secrets.toml
 Stores API credentials and service configuration. This file should never
 be committed to Git.
-⚙️ Prerequisites
+Prerequisites
 Before running MedSnap, make sure you have:
 - Python 3.10+
 - A Google Gemini API key
 - A Twilio account with WhatsApp messaging configured
 - A Twilio WhatsApp sender
 - A Twilio Content Template SID
-🚀 Installation
+Installation
 1. Clone the repository
 git clone <your-repository-url>
 cd MedSnap
@@ -129,7 +129,7 @@ Open the Streamlit URL shown in your terminal.
 5. Review the AI-generated information.
 6. Use Send to WhatsApp to receive a concise summary of the
    medicines discussed.
-🔐 Safety & Privacy
+Safety & Privacy
 MedSnap is designed with medicine-information safety boundaries:
 - It does not claim that a medicine is definitely safe or appropriate
   for a user.
@@ -145,7 +145,7 @@ MedSnap is designed with medicine-information safety boundaries:
 Do not commit API keys, authentication tokens, or other secrets to the
 repository. The project's .gitignore excludes Streamlit secrets,
 virtual environments, Python cache files, and .pyc files.
-⚠️ Limitations
+Limitations
 AI-based medicine identification can be uncertain, especially when:
 - The tablet or packaging is partially visible.
 - Text on the packaging is blurry.
@@ -153,13 +153,13 @@ AI-based medicine identification can be uncertain, especially when:
 - The image does not contain enough identifying information.
 Always verify important medication information with the packaging, a
 pharmacist, doctor, or other qualified healthcare professional.
-🌟 Future Possibilities
+Future Possibilities
 Potential extensions include:
-- 🌐 Multilingual medicine explanations
-- 🔊 Voice-based medicine assistance
-- 🧾 Prescription and medicine-list organization
-- ⏰ Medication reminder workflows
-- 📊 Personal medicine history
-- 🏥 Pharmacy or healthcare-provider integration
-- 🔎 Verified medicine information from trusted medical databases
-- ♿ Accessibility-first voice and large-text interfaces
+- Multilingual medicine explanations
+- Voice-based medicine assistance
+- Prescription and medicine-list organization
+- Medication reminder workflows
+- Personal medicine history
+- Pharmacy or healthcare-provider integration
+- Verified medicine information from trusted medical databases
+- Accessibility-first voice and large-text interfaces
